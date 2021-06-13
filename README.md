@@ -57,6 +57,8 @@ Examples:
 * these default configurations can be overridden partially or entirely by including them in your local `inDev.yaml`
 
 
+![Example Usage](docs/inDev_example.png)
+
 
 ###### Configuration:
 
