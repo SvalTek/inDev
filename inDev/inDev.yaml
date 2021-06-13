@@ -1,0 +1,39 @@
+#
+# Author: theros#7648 (email)
+# inDev.yaml (c) 2021
+# Desc: Default inDev Configuration
+# Created:  2021-06-08T08:01:32.222Z
+# Modified: !date!
+#
+
+globals:
+  debug: true # should we enable debug?
+  version: 0.1.0-alpha # current release version
+
+environments:
+  - name: shell
+    image: alpine:latest
+    description: default shell environment
+    workdir: /opt/workspace
+    provides:
+      - sh
+      - bash
+      - zsh
+    bindmounts:
+      --
+        source: '%CD%'
+        target: '/opt/workspace'
+
+  - name: node
+    image: docker.io/node:12-alpine
+    description: nodejs environment
+    workdir: /opt/workspace
+    provides:
+      - node
+      - npm
+      - npx
+      - yarn
+    bindmounts:
+      --
+        source: '%CD%'
+        target: '/opt/workspace'

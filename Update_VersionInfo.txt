@@ -1,0 +1,8 @@
+  // Used by the build script This ResourceHacker script 
+  // Updates resources in inDev.exe with the compiled ./build/versionInfo.res
+  // Containing the VersionInfo for inDev as luvi doesnt handle that itself
+  [FILENAMES]
+  Exe=    build/inDev.exe
+  SaveAs= build/inDev.exe
+  [COMMANDS]
+  -add build/versionInfo.res ,,,  //adding all the new resources
