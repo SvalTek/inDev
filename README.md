@@ -17,6 +17,7 @@ An easy to use Wrapper for running commands within specified containers
 
 ###### Installation:
 
+* Make sure you Have a working install of [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 * Download the Latest Release [Releases](https://github.com/SvalTek/inDev/releases)
 * Copy inDev.exe to someplace in your systems path
 
