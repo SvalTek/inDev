@@ -23,6 +23,7 @@ An easy to use Wrapper for running commands within specified containers
 ###### Usage:
 
 `inDev %CD% help ` - show the inDev usage info
+
 `inDev %CD% run [command] [args]` - run a command using inDev, replacing [command] with your command and [args] with any parameters
 
 Examples:
@@ -103,9 +104,9 @@ this projects made entirely in Lua,  making use of luvit's luvi tool to produce 
 that make this easy to modify and real easy to build...
 to build this you need a few things:
 
-- luvi (either somewhere in your path or just place the file in the main folder next to build.bat)
+- [luvi](https://github.com/luvit/luvi/releases) (either somewhere in your path or just place the file in the main folder next to build.bat)
   - used to bundle inDevs lua code into a nice little application
-- ResourceHacker.exe (just the executable alone from the zip provided on the website, place it in main folder next to build.bat)
+- [ResourceHacker.exe](http://www.angusj.com/resourcehacker/) (just the executable alone from the zip provided on the website, place it in main folder next to build.bat)
   - used to update the resource data in he built inDev  binary  as luvi doesn't handle any of that itself
 - a good Lua ide (preferably vscode just because thats what its made in. but anything works)
 
